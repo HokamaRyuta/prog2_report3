@@ -88,6 +88,14 @@ public class LivingThing {
     }
 
     /**
+     * フィールド変数attackのgetterメソッド。
+     * @return キャラクターの攻撃力
+     */
+    public int getAttack(){
+        return attack;
+    }
+
+    /**
      * フィールド変数deadのgetterメソッド。
      * @return キャラクターの生死状態
      */
