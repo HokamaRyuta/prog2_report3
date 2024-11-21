@@ -19,7 +19,7 @@ class EnemyTest {
         Enemy slime = new Enemy("スライムもどき", 10, 100);
         demoHero.attack(slime);
         slime.attack(demoHero);
-        if(slime.getDead() == true){
+        if(slime.isDead() == true){
             assertEquals(defaultHeroHp, demoHero.getHitPoint());
         }
     }
