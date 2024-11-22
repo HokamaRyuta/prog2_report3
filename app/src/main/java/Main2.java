@@ -2,7 +2,8 @@ import jp.ac.uryukyu.ie.e245703.*;
 
 public class Main2 {
     public static void main(String[] args){
-        Hero hero = new Warrior("勇者", 10, 5); // (a)
+        Hero hero = new Hero("勇者", 10, 5); // (a)
+        System.out.println(hero);
         Enemy enemy = new Enemy("スライム", 6, 3);
 
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
