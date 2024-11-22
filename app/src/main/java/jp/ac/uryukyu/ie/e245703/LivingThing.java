@@ -102,4 +102,15 @@ public class LivingThing {
     public boolean isDead(){
         return dead;
     }
+
+
+    /**
+     * toStringをオーバーライドしたメソッド。
+     * オブジェクトの実行時クラスと、フィールドに格納されている値を表示する。
+     * @return オブジェクトの実行時クラスと、フィールドに格納されている値
+     */
+    @Override
+    public String toString(){
+        return this.getClass() + ", name=" + this.getName() +  ", hitPoint=" + this.getHitPoint() + ", attack=" + this.getAttack() + ", dead=" + this.isDead();
+    }
 }
